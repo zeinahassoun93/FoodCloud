@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/lightBeige"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/itemname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:gravity="start"
+           android:text="Sample"
+           android:textAlignment="textStart"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.096"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"></TextView>
+
+       <TextView
+           android:id="@+id/category1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="10dp"
+           android:gravity="end"
+           android:text="Sample"
+           android:textAlignment="textEnd"
+           android:textSize="15sp"
+           app:layout_constraintBottom_toTopOf="@+id/exdate1"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.676"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.444"></TextView>
+
+       <TextView
+           android:id="@+id/quantity1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginBottom="10dp"
+           android:gravity="end"
+           android:text="Sample"
+           android:textAlignment="textEnd"
+           android:textSize="15sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toStartOf="@+id/exdate1"
+           app:layout_constraintHorizontal_bias="0.075"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/itemname"
+           app:layout_constraintVertical_bias="0.0"></TextView>
+
+       <ImageButton
+           android:id="@+id/arrowbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="25dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0"
+           app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+       <TextView
+           android:id="@+id/exdate1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="end"
+           android:text="TextView"
+           android:textAlignment="textEnd"
+           android:textColor="@color/colorPrimaryDark"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.668"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.84" />
+
+       <TextView
+           android:id="@+id/redeemed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="end"
+           android:textAlignment="textEnd"
+           android:textColor="@color/colorPrimaryDark"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.932"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.864" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"></View>
+
+</androidx.cardview.widget.CardView>
