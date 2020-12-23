@@ -22,9 +22,7 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity
-            android:name=".receiver.loginreceiver"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
             android:name=".receiver.receiver_bottom"
             tools:ignore="Instantiatable" />
@@ -42,7 +40,7 @@
         <activity
             android:name=".receiver.SignUpReceiver"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".HomeActivity" />
+
         <activity
             android:name=".donorside.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
